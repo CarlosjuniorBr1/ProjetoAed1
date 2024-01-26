@@ -1,0 +1,19 @@
+Strutcts
+    Música (String Nome da musica, String nome do artistia, string endereço);
+Lista:
+    Playlist - Pronto
+    remover 
+    inserir ordenado
+     
+Fila:
+    Reproducao - Pronto
+Main:
+    Main
+Armazen de musicas:
+    Arquivo?
+    Banco de Dados?
+
+TADS:
+    Fila pronto
+    Lista pronto
+    MUSICA; check
