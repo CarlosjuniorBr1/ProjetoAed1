@@ -2,9 +2,12 @@
 #include "musica.hpp"
 #include <iostream>
 #include <string>
+#include <SFML/Audio.hpp>
 
 int main()
 {
+
+   
     fila * primeira = new_fila();
     int escolha;
     
@@ -25,7 +28,7 @@ int main()
                 std::string caminho;
                 std::string musica_nome;
 
-               
+                system("clear");
                 std::cout << "Nome :";
                 getline(std::cin, musica_nome);
                 std::cout << "Artista :";
@@ -52,9 +55,26 @@ int main()
                 break;
             
             case 3:
+                system("clear");
                 remove_fila(primeira);
+                std::cout << "(1) Retornar\n";
+                while(escolha != 1)
+                {
+                    std::cin >> escolha;
+                }
+                getchar();
+                break;
             
             case 4:
+                sf::Music music;
+                if (!music.openFromFile("/arquivosMusicas/belligol.mp3")) {
+                  std::cerr << "Failed to open sound file\n";
+                } else {
+                    // Inicialize os parâmetros de som, se necessário
+                    music.play();
+                    std::cout<<"ÈEEEE ELEEEE O ILUMINADO\n";
+                }
+                
                 break;
 
             deafult:

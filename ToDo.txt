@@ -1,5 +1,5 @@
 Strutcts
-    Música (String Nome da musica, String nome do artistia, string endereço);
+    Música (String Nome da musica, String nome do artistia, string endereço); check
 Lista:
     Playlist - Pronto
     remover 

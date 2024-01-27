@@ -64,13 +64,15 @@ void remove_fila(fila * f)
 {
     if(f->tamanho == 0)
     {
-        cout << "A sua Fila ja esta vazia!\n";
+        std::cout << "A sua Fila ja esta vazia!\n";
         return;
     } else
     {
         Node * atual = f->cabeca;
 
         f->cabeca = f->cabeca->proximo;
+
+        std::cout << atual->elemento.Nome_musica <<" Removido com Sucesso!\n";
 
         free(atual);
 
@@ -104,7 +106,7 @@ void show_fila(fila * f)
         return;
     }
 
-    std::cout << "Sua lista possui: " << f->tamanho << " elementos\n";
+    std::cout << "Sua lista possui: " << f->tamanho << " Musicas\n";
 
     show_node(f->cabeca);
 }
